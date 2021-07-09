@@ -1,0 +1,201 @@
+.wrap-account-search{
+    width: 80%;
+    padding: 15px 0px;
+    margin-left: 40px;
+    
+    border-bottom: 1px solid #80808091;
+    color: unset;
+}
+.wrap-account-search:hover{
+    transition-delay: 50ms;
+    border-bottom: 2px solid #808080ef;
+
+    color: unset;
+}
+.wrap-account-search img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile img.avatar{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.profile h2.title{
+    font-size: 30px;
+}
+.profile .title svg{
+    font-size: 24px;
+}
+.profile .btn-blue{
+    padding: 5px 60px;
+    border-radius: 10px;
+}
+.profile .follow-amount{
+    font-weight: 100;
+}
+.profile .follow-amount b{
+    font-weight: 700;
+}
+.profile .wrap-tab{
+    width: 100%;
+}
+.profile .tab{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.wrap-list-videos{
+
+}
+.wrap-list-videos .video{
+    padding: 2px;
+}
+.wrap-list-videos .video img{
+    width: 100%;
+}
+.wrap-list-videos .video button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+#follow{
+    height: 36px;
+}
+
+#followed{
+    display: none;
+    height: 36px;
+
+}
+#followed .mess{
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 7, 102);
+    color: rgb(255, 7, 102);
+}
+#followed button{
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+}
+#followed .mess svg{
+    height: 100%;
+    width: 100%;
+    fill: rgb(255, 7, 102);
+}
+#unfollow:hover{
+    /* border: 1px solid rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 7, 102);
+}
+#unfollow:hover svg {
+    height: 100%;
+    width: 100%;
+    fill: white;
+}
+#unfollow:hover .mess{
+    border-color: white;
+}
+
+.wrap-edit-profile{
+    width: 100%;
+    min-height: 100px;
+    background-color: #e5e5e5a9;
+    padding: 0px 40px;
+}
+.btn-back{
+    display: block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: rgba(22, 24, 35, 0.082);
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn-back:hover{
+    background: #3796f513;
+    border: 0.4px solid #3796f5c5; 
+}
+.btn-back:hover svg{
+    color: #3796f5c5; 
+}
+
+.wrap-edit-profile .title{
+    text-align: center;
+    font-size: 26px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+.wrap-edit-profile .edit{
+    font-size: 20px;
+    margin-top: 50px;
+}
+.wrap-edit-profile .edit img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.wrap-edit-profile .edit textarea{
+    background: #D9D6D6;
+    border: 1px solid #D9D6D6;
+    padding: 15px;
+    border-radius: 8px;
+    width: 400px;
+}
+.wrap-edit-profile .edit textarea:focus{
+    outline: none;
+    border: 1px solid #3399FF;
+    background-color: #559ee71f;
+}
+.wrap-edit-profile .edit .set-w{
+    width: 400px;
+}
+.wrap-edit-profile .edit .btn-private svg{
+    height: 27px;
+    width: 27px;
+    margin-right: 10px;
+}
+.wrap-edit-profile .edit .btn-private {
+
+}
+
+.wrap-highlight{
+    width: 400px;
+    background-color: #E6E6E6;
+    display: flex;
+    padding: 20px;
+    flex-flow: wrap;
+}
+.wrap-highlight .input{
+    width: 33.3333333%;
+    padding: 10px;
+}
+.wrap-highlight .input svg{
+    width: 50px;
+}
+.wrap-highlight .input label{
+    width: 100%;
+    background: #C4C4C4;
+    border-radius: 7px;
+    height: 96px;
+    padding: 24px;
+}
+.wrap-highlight .input label:hover {
+    background-color: #559ee71f;
+}
+.wrap-highlight .input label:hover svg{
+    fill: #3399FF;
+}

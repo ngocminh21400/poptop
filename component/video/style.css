@@ -1,0 +1,138 @@
+.video-section{
+    padding-left: 5%;
+}
+.video-section .title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.wrap-post{
+    border-bottom: 1px solid gray;
+}
+.video{
+    width: 65%;
+}
+
+.video video{
+    width: 100%;
+    border-radius: 20px;
+}
+video:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.share-button{
+    width: 20%;
+    align-self: flex-end;
+}
+.share-button .btn-action{
+    background-color: #E6E6E7;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.btn-action+.small{
+    font-size: 13px;
+}
+
+.upload-label{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    background-color: #FAFAF6;
+    text-align: center;
+}
+.upload-label div{
+    transform: translate(0, 40%);
+
+}
+.list-quality{
+    text-align: left;
+    padding-left: 40px;
+    font-weight: 100;
+}
+.list-quality li{
+    list-style: disc;
+}
+.wrap-cover{
+    height: 200px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+}
+.btn-like.liked svg path{
+    fill: rgb(255, 7, 102);
+}
+
+
+/* livestream */
+
+.live-section{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.live-section .video-area{
+    width: 60%;
+    background-color: black;
+}
+.live-section .video-area .mask{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 235, 205, 0);
+}
+.live-section .mask .button{
+    position: relative;
+    top: 260px;
+    text-align: right;
+    display: inline-block;
+    right: -220px;
+}
+
+.live-section .comment-area{
+    width: 40%;
+    background-color: #F4F4F4;
+    border: 0.5px solid rgb(180, 177, 177);
+    overflow-y: scroll;
+}
+.live-section .comment-area .comment{
+    padding: 10px 10px 0 10px;
+}
+.live-section .comment-area img{
+    border-radius: 50%;
+}
+
+.comment-area .heart.active svg path{
+    fill: rgb(255, 7, 102);
+    stroke: rgb(255, 7, 102);
+}
+.comment-area .heart:hover svg path{
+    stroke: rgb(255, 7, 102);
+}
+.recommend-section{
+    width: 80%;
+    margin: 0;
+}
+.recommend-section .title{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+}
+.wrap-list-videos .video a{
+    height: 400px;
+}
+.wrap-list-videos .video img{
+    height: 100%;
+}
+.video .bottom-left{
+    position: absolute;
+    bottom: 3px;
+    left: 10px;
+}
+.video .bottom-right{
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+}

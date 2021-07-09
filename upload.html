@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poptop</title>
+
+    <!-- /*-----*-----*-- setup-lib-css --*-----*-----*/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">    
+    <link rel="stylesheet" href="asset/setup.css">
+    
+    <!-- /*-----*-----*-- component --*-----*-----*/ -->
+    <link rel="stylesheet" href="./component/header/style.css">
+    <link rel="stylesheet" href="./component/sidebar/style.css">
+    <link rel="stylesheet" href="./component/video/style.css">
+    <!-- /*-----*-----*-- edit-style --*-----*-----*/ -->
+
+    <!-- /*-----*-----*-- important --*-----*-----*/ -->
+    <link rel="stylesheet" href="asset/style.css">
+
+</head>
+<body class="scroll">
+    <!-- ----- ----- header ----- ------->
+    <section class="header-top"></section>
+    <section class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">
+                        <img class="header-logo" src="./src/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <ul class="list-inline text-center mb-0">
+                        <li class="list-inline-item nav-menu">
+                            <a href="#" class="active">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 11.25L22.8625 14.1125L16.7625 20.2125L11.7625 15.2125L2.5 24.4875L4.2625 26.25L11.7625 18.75L16.7625 23.75L24.6375 15.8875L27.5 18.75V11.25H20Z" fill="black"/>
+                                    </svg>
+                                        
+                                                                               
+                                </div>
+                                <b>Theo dõi</b>
+                            </a>
+                           
+                        </li>
+                        <li class="list-inline-item nav-menu">
+                            <a href="#">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M5.20825 7.29167C5.20825 9.59285 7.07373 11.4583 9.37492 11.4583C11.6761 11.4583 13.5416 9.59285 13.5416 7.29167C13.5416 4.99048 11.6761 3.125 9.37492 3.125C7.07373 3.125 5.20825 4.99048 5.20825 7.29167ZM15.6249 11.4583C15.6249 13.1842 17.024 14.5833 18.7499 14.5833C20.4758 14.5833 21.8749 13.1842 21.8749 11.4583C21.8749 9.73244 20.4758 8.33333 18.7499 8.33333C17.024 8.33333 15.6249 9.73244 15.6249 11.4583Z" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.35765 13.5417C4.43949 13.5417 0.404436 16.0693 0.000678838 21.0408C-0.0213143 21.3116 0.496575 21.875 0.757815 21.875H17.9653C18.7478 21.875 18.76 21.2453 18.7478 21.0417C18.4426 15.9304 14.345 13.5417 9.35765 13.5417ZM24.4333 21.875H20.4167C20.4167 19.5303 19.642 17.3665 18.3346 15.6256C21.883 15.6644 24.7804 17.4585 24.9984 21.25C25.0072 21.4027 24.9984 21.875 24.4333 21.875Z" fill="black"/>
+                                        </svg>
+                                        
+                                        
+                                         
+                                </div>
+                                <b>Xu hướng</b>
+                            </a>
+                            
+                        </li>
+                        <li class="list-inline-item nav-menu">
+                            <a href="#">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="30" height="30" fill="url(#pattern0)"/>
+                                        <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0" transform="scale(0.0333333)"/>
+                                        </pattern>
+                                        <image id="image0" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA3UlEQVRIie3VQU4CMRiG4Qe3ssADcAJOoG5coktu4rVcyiWUWyCRrexYqMHFUEMmlHagOgmZN2kmab/2TZt2fjo6zpEHLLAp0Ba4zxWXkob2liPtbcOl6UX6h3jCF2V3G9o+RqrT+M38h/gOH/XMX4snWO/LpBZ5wTUucYPXBuJHfMcyhxZ4x6C2gwGWmeJo5sJhnrGq9a0wTcxLkhLHxmPPpRFNj/pKgaNODW5Ul+kW/e13ljEncPTlavU5nSqmpR9IYIR5yLRVJD5pqSxSFe7dqnGqdJwr7ug4L34A9N9Nz17b7vMAAAAASUVORK5CYII="/>
+                                        </defs>
+                                    </svg>
+                                        
+                                </div>
+                                <b>Live stream</b>
+                            </a>
+                            
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="list-inline text-right mb-0 right-nav-header">
+                        <li class="list-inline-item">
+                            
+                            <a class="btn" href="upload.html">
+                                
+                                <svg width="1em" height="1em" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4125 11.7434C26.4492 7.81452 22.1567 4.86502 17 4.86502C12.9058 4.86502 9.35 6.73266 7.57917 9.46579C3.315 9.8302 0 12.7342 0 16.2531C0 20.0225 3.81083 23.0859 8.5 23.0859H26.9167C30.8267 23.0859 34 20.535 34 17.3919C34 14.3854 31.0958 11.9484 27.4125 11.7434ZM26.9167 20.8083H8.5C5.36917 20.8083 2.83333 18.7698 2.83333 16.2531C2.83333 13.9185 5.00083 11.9712 7.87667 11.732L9.3925 11.6067L10.1008 10.5249C11.4467 8.44086 14.0817 7.14263 17 7.14263C20.7117 7.14263 23.9133 9.2608 24.6358 12.1875L25.0608 13.8957L27.2283 14.021C29.4383 14.1349 31.1667 15.6267 31.1667 17.3919C31.1667 19.2709 29.2542 20.8083 26.9167 20.8083ZM14.9458 15.1143H11.3333L17 10.559L22.6667 15.1143H19.0542V18.5307H14.9458V15.1143Z" fill="#333333"/>
+                                </svg>
+                                    
+                            </a>
+
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.3977 16.6022L1.71633e-05 12.4371L29.2186 0.781366L17.5628 29.9999L13.3977 16.6022Z" fill="black"/>
+                                </svg>
+                            </a>
+                                
+                        </li>
+                        <li class="list-inline-item">
+                            <button class="btn open-notify" id="">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 2.09302C12.5 0.934884 13.6167 0 15 0C16.3833 0 17.5 0.934884 17.5 2.09302V3.72558C22.7333 4.67442 26.6667 8.5814 26.6667 13.2558V21.6279L30 24.4186V25.814H0V24.4186L3.33333 21.6279V13.2558C3.33333 8.5814 7.26667 4.67442 12.5 3.72558V2.09302ZM14.9998 6.27907C19.5998 6.27907 23.3332 9.40465 23.3332 13.2558V23.0233H6.6665V13.2558C6.6665 9.40465 10.3998 6.27907 14.9998 6.27907ZM11.6833 27.2233C11.6833 28.7582 13.1667 30.0001 15 30.0001C16.8333 30.0001 18.3167 28.7582 18.3167 27.2233H11.6833Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="wrap-notify">
+                                <div class="header mb-3">
+                                    <h4 class="title">Thông báo</h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item tag active">Tất cả</li>
+                                        <li class="list-inline-item tag">Thích</li>
+                                        <li class="list-inline-item tag">Bình luận</li>
+                                        <li class="list-inline-item tag">Nhắc đến</li>
+                                        <li class="list-inline-item tag">Follower</li>
+
+                                    </ul>
+                                </div>
+                                <p class="text-muted"><b>Hôm nay</b></p>
+                                <div class="notify-item">
+                                    <img src="./src/avt.png" alt="avatar">
+                                    <div style="width: 55%;">
+                                        <b>Minn</b><br>
+                                        <small class="text-muted">Đã bắt đầu follow bạn. 21-04</small>
+                                    </div>
+                                    <button class="bg-pink">Follow lại</button>
+                                </div>
+                                <p class="text-muted mt-4"><b>Trước đây</b></p>
+                                <div class="notify-item">
+                                    <img src="./src/avt.png" alt="avatar">
+                                    <div style="width: 55%;">
+                                        <b>Minn</b><br>
+                                        <small class="text-muted">Đã bắt đầu follow bạn. 21-04</small>
+                                    </div>
+                                    <button class="bg-pink">Follow lại</button>
+                                </div>
+                                <div class="notify-item">
+                                    <img src="./src/avt.png" alt="avatar">
+                                    <div style="width: 55%;">
+                                        <b>Mark Zuckerberg</b><br>
+                                        <small class="text-muted">Đã trả lời bình luận của bạn. 22-02</small>
+                                    </div>
+                                    <button class="bg-purple">Xem </button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <button class="btn btn-account">
+                                <img  src="./src/avt.png" alt="">                                 
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ----- ----- breadcrumb ----- ------->
+
+    <!-- ----- ----- body ----- ------->
+    <div class="gap-md"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <label for="upload" class="upload-label">
+                    <div>
+                        <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M100.781 52.2916C97.2396 34.3229 81.4583 20.8333 62.5 20.8333C47.4479 20.8333 34.375 29.375 27.8646 41.875C12.1875 43.5416 0 56.8229 0 72.9166C0 90.1562 14.0104 104.167 31.25 104.167H98.9583C113.333 104.167 125 92.5 125 78.125C125 64.375 114.323 53.2291 100.781 52.2916ZM98.9584 93.75H31.25C19.7396 93.75 10.4167 84.4271 10.4167 72.9167C10.4167 62.2396 18.3854 53.3334 28.9584 52.2396L34.5313 51.6667L37.1354 46.7188C42.0834 37.1875 51.7709 31.25 62.5 31.25C76.1459 31.25 87.9167 40.9375 90.5729 54.3229L92.1354 62.1354L100.104 62.7084C108.229 63.2292 114.583 70.0521 114.583 78.125C114.583 86.7188 107.552 93.75 98.9584 93.75ZM54.9479 67.7084H41.6667L62.5 46.875L83.3334 67.7084H70.0521V83.3334H54.9479V67.7084Z" fill="#333333"/>
+                        </svg>
+                        <h4 class="c-gray">Chọn video để tải lên</h4>
+                        <p class="c-gray">Hoặc kéo và thả tập tin</p>
+                        <ul class="c-gray list-quality">
+                            <li>MP4 hoặc WebM</li>
+                            <li>Độ phân giải 720x1280 trở lên</li>
+                            <li>Tối đa 120 giây</li>
+                        </ul>
+                    </div>
+                </label>
+                <input class="d-none" type="file" name="upload" id="upload">
+            </div>
+            <div class="col-lg-8">
+                <div class="form-group">
+                    <label class="f-md" for="content">Ghi chú</label>
+                    <input id="content" class="form-control" type="text" name="">
+                </div>
+                <div class="form-group">
+                    <label class="f-md" for="my-input">Ảnh bìa</label>
+                    <div class="d-flex wrap-cover">
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="d-block f-md" >Ai có thể xem video này</label>
+                            <input type="radio" name="privite" id="" checked> Công khai
+                            <input class="ml-3" type="radio" name="privite" id=""> Bạn bè
+                            <input class="ml-3" type="radio" name="privite" id=""> Riêng tư
+                            
+                        </div>
+                        <div class="col-6">
+                            <label class="d-block f-md" for="">Cho phép người dùng:</label>
+                            <input type="checkbox" name="" id=""> Bình luận
+                            <input class="ml-3" type="checkbox" name="" id=""> Duet / React
+                            <input class="ml-3" type="checkbox" name="" id=""> Stitch
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-right mt-5 mr-4">
+                    <button class="btn">Hủy bỏ</button>
+                    <button class="btn btn-blue">Đăng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- ----- footer ----- ------->
+    <section class="footer-2"></section>
+    <section class="footer-1"></section>
+    <section class="footer-absolute"></section>
+</body>
+</html>
+
+
+<!-- /*-----*-----*-- lib-javascript --*-----*-----*/ -->
+<script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<!-- /*-----*-----*-- my-script --*-----*-----*/ -->
+<script src="./component/header/script.js"></script>
+
+

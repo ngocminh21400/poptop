@@ -1,0 +1,66 @@
+@font-face{
+	font-family: Roboto-Condensed-B;
+	src: url(roboto_Condensed/RobotoCondensed-Bold.ttf);
+}
+@font-face{
+	font-family: Roboto-Condensed-R;
+	src: url(roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+	font-family: Roboto-Thin;
+	src: url(roboto/Roboto-Thin.ttf);
+}
+@font-face{
+	font-family: Roboto-Regular;
+	src: url(roboto/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: Roboto-Bold;
+	src: url(roboto/Roboto-Bold.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: 'IBM Plex Sans', sans-serif;}
+/* --------------------- */
+.title{ 
+    font-family: Roboto-Bold;
+}
+.wrap-content .content h2{
+    font-family: Roboto-Bold;
+}
+/* --------------------- */
+button:focus{
+	outline: none;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul li{
+	list-style-type: none;
+}
+html {
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #fff;
+	font-family: 'IBM Plex Sans'!important;
+}
+input:focus, button:focus, a:hover{
+	outline: none;
+	box-shadow: none;
+}
+.custom-hr{
+	width: 80%;
+	margin: auto;
+}

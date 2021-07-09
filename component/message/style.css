@@ -1,0 +1,116 @@
+.wrap-mess-list{
+    background-color: white;
+    border-radius: 10px;
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 30px 50px;
+}
+.wrap-mess-list .title{
+    font-size: 26px;
+
+}
+.wrap-mess-list .title button{
+    float: right;
+}
+
+.wrap-mess{
+    display: flex;
+    padding-bottom: 20px;
+}
+.wrap-mess .name{
+    font-weight: bold;
+    color: #000;
+}
+.wrap-mess img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.chat-area{
+    height: 80vh;
+    background-color: white;
+    padding: 30px 0;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+.chat-area .header{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.582);
+    padding: 0px 20px 20px 20px;
+}
+.chat-area .header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.chat-area .body{
+    height: 60vh;
+    overflow-y: scroll;
+}
+.chat-area .body .mess-in{
+    display: flex;
+}
+.chat-area .body .mess-in img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chat-area .body .list-mess{
+    padding: 10px;
+}
+.chat-area .body .list-mess .message li{
+    background-color: #F9F9F9;
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    padding: 3px 7px;
+    margin-bottom: 7px;
+}
+
+.mess-out .mess {
+    background-color: #F9F9F9;
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    padding: 3px 7px;
+    margin-bottom: 7px;
+}
+
+.chat-area .footer{
+    display: flex;
+    padding-left: 10px;
+}
+.chat-area .footer .btn{
+    padding-right: 0px;
+}
+.chat-area .footer .input-photo input{
+    display: none;
+}
+.chat-area .footer .input-photo label{
+    margin: 0;
+}
+.chat-area .footer .text{
+    width: 70%;
+    margin-left: 10px;
+    position: relative;
+}
+.chat-area .footer .text input{
+    width: 100%;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 10px;
+    background-color: #ECECEC;
+    color: rgba(128, 128, 128, 0.795);
+}
+.chat-area .footer .text .icon-send{
+    position: absolute;
+    right: 20px;
+    color: gray;
+}
+.icon-send svg{
+    fill:rgba(48, 47, 47, 0.726);
+}
+

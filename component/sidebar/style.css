@@ -1,0 +1,34 @@
+/* left sidebar */
+.wrap-suggest{
+    padding: 25px;
+    background: #FFFFFF;
+    border: 1px solid rgba(177, 202, 226, 0.51);
+    border-radius: 30px;
+}
+
+.wrap-account img{
+    border-radius: 50%;
+}
+.wrap-suggest .title{
+    font-family: 'IBM Plex San's;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+a.wrap-account{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrap-account .name{
+    line-height: 26px;
+    font-size: 16px;
+}
+.wrap-account .name svg{
+    vertical-align: text-bottom;
+}

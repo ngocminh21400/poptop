@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poptop</title>
+
+    <!-- /*-----*-----*-- setup-lib-css --*-----*-----*/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">	
+    <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">    
+    <link rel="stylesheet" href="asset/setup.css">
+    
+    <!-- /*-----*-----*-- component --*-----*-----*/ -->
+    <link rel="stylesheet" href="./component/header/style.css">
+    <link rel="stylesheet" href="./component/sidebar/style.css">
+    <link rel="stylesheet" href="./component/video/style.css">
+    <link rel="stylesheet" href="./component/account/style.css">
+
+    <!-- /*-----*-----*-- edit-style --*-----*-----*/ -->
+
+    <!-- /*-----*-----*-- important --*-----*-----*/ -->
+    <link rel="stylesheet" href="asset/style.css">
+
+</head>
+<body class="scroll">
+    <!-- ----- ----- header ----- ------->
+    <section class="header-top"></section>
+    <section class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="/">
+                        <img class="header-logo" src="./src/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <ul class="list-inline text-center mb-0">
+                        <li class="list-inline-item nav-menu">
+                            <a href="#" class="active">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 11.25L22.8625 14.1125L16.7625 20.2125L11.7625 15.2125L2.5 24.4875L4.2625 26.25L11.7625 18.75L16.7625 23.75L24.6375 15.8875L27.5 18.75V11.25H20Z" fill="black"/>
+                                    </svg>
+                                        
+                                                                               
+                                </div>
+                                <b>Theo dõi</b>
+                            </a>
+                           
+                        </li>
+                        <li class="list-inline-item nav-menu">
+                            <a href="#">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M5.20825 7.29167C5.20825 9.59285 7.07373 11.4583 9.37492 11.4583C11.6761 11.4583 13.5416 9.59285 13.5416 7.29167C13.5416 4.99048 11.6761 3.125 9.37492 3.125C7.07373 3.125 5.20825 4.99048 5.20825 7.29167ZM15.6249 11.4583C15.6249 13.1842 17.024 14.5833 18.7499 14.5833C20.4758 14.5833 21.8749 13.1842 21.8749 11.4583C21.8749 9.73244 20.4758 8.33333 18.7499 8.33333C17.024 8.33333 15.6249 9.73244 15.6249 11.4583Z" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.35765 13.5417C4.43949 13.5417 0.404436 16.0693 0.000678838 21.0408C-0.0213143 21.3116 0.496575 21.875 0.757815 21.875H17.9653C18.7478 21.875 18.76 21.2453 18.7478 21.0417C18.4426 15.9304 14.345 13.5417 9.35765 13.5417ZM24.4333 21.875H20.4167C20.4167 19.5303 19.642 17.3665 18.3346 15.6256C21.883 15.6644 24.7804 17.4585 24.9984 21.25C25.0072 21.4027 24.9984 21.875 24.4333 21.875Z" fill="black"/>
+                                        </svg>
+                                        
+                                        
+                                         
+                                </div>
+                                <b>Xu hướng</b>
+                            </a>
+                            
+                        </li>
+                        <li class="list-inline-item nav-menu">
+                            <a href="#">
+                                <div>
+                                    <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="30" height="30" fill="url(#pattern0)"/>
+                                        <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0" transform="scale(0.0333333)"/>
+                                        </pattern>
+                                        <image id="image0" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA3UlEQVRIie3VQU4CMRiG4Qe3ssADcAJOoG5coktu4rVcyiWUWyCRrexYqMHFUEMmlHagOgmZN2kmab/2TZt2fjo6zpEHLLAp0Ba4zxWXkob2liPtbcOl6UX6h3jCF2V3G9o+RqrT+M38h/gOH/XMX4snWO/LpBZ5wTUucYPXBuJHfMcyhxZ4x6C2gwGWmeJo5sJhnrGq9a0wTcxLkhLHxmPPpRFNj/pKgaNODW5Ul+kW/e13ljEncPTlavU5nSqmpR9IYIR5yLRVJD5pqSxSFe7dqnGqdJwr7ug4L34A9N9Nz17b7vMAAAAASUVORK5CYII="/>
+                                        </defs>
+                                    </svg>
+                                        
+                                </div>
+                                <b>Live stream</b>
+                            </a>
+                            
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="list-inline text-right mb-0 right-nav-header">
+                        <li class="list-inline-item">
+                            
+                            <button class="btn" type="button" data-toggle="modal" data-target="#login-modal">
+                                <span>Tải lên </span>
+                                <svg width="1em" height="1em" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4125 11.7434C26.4492 7.81452 22.1567 4.86502 17 4.86502C12.9058 4.86502 9.35 6.73266 7.57917 9.46579C3.315 9.8302 0 12.7342 0 16.2531C0 20.0225 3.81083 23.0859 8.5 23.0859H26.9167C30.8267 23.0859 34 20.535 34 17.3919C34 14.3854 31.0958 11.9484 27.4125 11.7434ZM26.9167 20.8083H8.5C5.36917 20.8083 2.83333 18.7698 2.83333 16.2531C2.83333 13.9185 5.00083 11.9712 7.87667 11.732L9.3925 11.6067L10.1008 10.5249C11.4467 8.44086 14.0817 7.14263 17 7.14263C20.7117 7.14263 23.9133 9.2608 24.6358 12.1875L25.0608 13.8957L27.2283 14.021C29.4383 14.1349 31.1667 15.6267 31.1667 17.3919C31.1667 19.2709 29.2542 20.8083 26.9167 20.8083ZM14.9458 15.1143H11.3333L17 10.559L22.6667 15.1143H19.0542V18.5307H14.9458V15.1143Z" fill="#333333"/>
+                                </svg>
+                                    
+                            </button>
+
+                        </li>
+                        <li class="list-inline-item">
+                            <button class="btn btn-blue"  type="button" data-toggle="modal" data-target="#login-modal">
+                                Đăng nhập
+                            </button>
+                        </li>
+                        <li class="list-inline-item">
+                            <button class="btn ">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4 9C15.83 9 17 7.875 17 6.5C17 5.125 15.83 4 14.4 4C12.97 4 11.8 5.125 11.8 6.5C11.8 7.875 12.97 9 14.4 9ZM14.4 11.5C12.97 11.5 11.8 12.625 11.8 14C11.8 15.375 12.97 16.5 14.4 16.5C15.83 16.5 17 15.375 17 14C17 12.625 15.83 11.5 14.4 11.5ZM11.8 21.5C11.8 20.125 12.97 19 14.4 19C15.83 19 17 20.125 17 21.5C17 22.875 15.83 24 14.4 24C12.97 24 11.8 22.875 11.8 21.5Z" fill="black" fill-opacity="0.54"/>
+                                </svg>                                    
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- modal login -->
+    <div id="login-modal" class="modal fade login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="float-right mt-3 mr-4">
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.41L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" fill="black" fill-opacity="1"/>
+                                </svg>
+                                    
+                                    
+                            </span>
+                        </button>
+                    </div>
+                    <h3 class="title mt-5 mb-3">Login to Poptop</h3>
+
+                    <small class="small-txt c-blue">Manages your account, check notifications, comment on videos and more</small>
+                    <div class="wrap-button mt-4 mb-4">
+                        <button class="btn btn-login" type="button" data-toggle="modal" data-target="#QR-modal" data-dismiss="modal">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6.5C13.1046 6.5 14 5.60457 14 4.5C14 3.39543 13.1046 2.5 12 2.5V6.5ZM2.5 12C2.5 13.1046 3.39543 14 4.5 14C5.60457 14 6.5 13.1046 6.5 12H2.5ZM29.5 12C29.5 13.1046 30.3954 14 31.5 14C32.6046 14 33.5 13.1046 33.5 12H29.5ZM24 2.5C22.8954 2.5 22 3.39543 22 4.5C22 5.60457 22.8954 6.5 24 6.5V2.5ZM24 29.5C22.8954 29.5 22 30.3954 22 31.5C22 32.6046 22.8954 33.5 24 33.5V29.5ZM33.5 24C33.5 22.8954 32.6046 22 31.5 22C30.3954 22 29.5 22.8954 29.5 24H33.5ZM6.5 24C6.5 22.8954 5.60457 22 4.5 22C3.39543 22 2.5 22.8954 2.5 24H6.5ZM12 33.5C13.1046 33.5 14 32.6046 14 31.5C14 30.3954 13.1046 29.5 12 29.5V33.5ZM12 2.5H7.5V6.5H12V2.5ZM7.5 2.5C4.73858 2.5 2.5 4.73858 2.5 7.5H6.5C6.5 6.94772 6.94772 6.5 7.5 6.5V2.5ZM2.5 7.5V12H6.5V7.5H2.5ZM33.5 12V7.5H29.5V12H33.5ZM33.5 7.5C33.5 4.73858 31.2614 2.5 28.5 2.5V6.5C29.0523 6.5 29.5 6.94772 29.5 7.5H33.5ZM28.5 2.5H24V6.5H28.5V2.5ZM24 33.5H28.5V29.5H24V33.5ZM28.5 33.5C31.2614 33.5 33.5 31.2614 33.5 28.5H29.5C29.5 29.0523 29.0523 29.5 28.5 29.5V33.5ZM33.5 28.5V24H29.5V28.5H33.5ZM2.5 24V28.5H6.5V24H2.5ZM2.5 28.5C2.5 31.2614 4.73858 33.5 7.5 33.5V29.5C6.94771 29.5 6.5 29.0523 6.5 28.5H2.5ZM7.5 33.5H12V29.5H7.5V33.5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.125 10.1249H16.25V16.2499H10.125V10.1249Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 10.1249H25.875V16.2499H19.75V10.1249Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 19.7499H25.875V25.8749H19.75V19.7499Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.125 19.7499H16.25V25.8749H10.125V19.7499Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            Use QR code
+                        </button>
+                        <button class="btn btn-login"  type="button" data-toggle="modal" data-target="#username-modal" data-dismiss="modal">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5H28.5C30.15 4.5 31.5 5.85 31.5 7.5V28.5C31.5 30.15 30.15 31.5 28.5 31.5H7.5C5.835 31.5 4.5 30.15 4.5 28.5V7.5C4.5 5.85 5.835 4.5 7.5 4.5ZM28.5 28.5V7.5H7.5V28.5H28.5ZM18 18C15.525 18 13.5 15.975 13.5 13.5C13.5 11.025 15.525 9 18 9C20.475 9 22.5 11.025 22.5 13.5C22.5 15.975 20.475 18 18 18ZM16.5 13.5C16.5 12.675 17.175 12 18 12C18.825 12 19.5 12.675 19.5 13.5C19.5 14.325 18.825 15 18 15C17.175 15 16.5 14.325 16.5 13.5ZM9 27V24.705C9 20.955 14.955 19.335 18 19.335C21.045 19.335 27 20.955 27 24.705V27H9ZM23.535 24H12.465C13.485 23.16 16.035 22.32 18 22.32C19.965 22.32 22.5 23.16 23.535 24Z" fill="black"/>
+                            </svg>
+                            Use phone/ email/ username
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="18" fill="#4E6297"/>
+                                <path d="M26.1 12.4368C26.1 11.0891 24.9109 9.90002 23.5632 9.90002H13.3368C11.9891 9.90002 10.8 11.0891 10.8 12.4368V22.6632C10.8 24.0109 11.9891 25.2 13.3368 25.2H18.4896V19.413H16.587V16.8762H18.4896V15.8456C18.4896 14.1016 19.758 12.5954 21.3435 12.5954H23.4047V15.1321H21.3435C21.1057 15.1321 20.8679 15.37 20.8679 15.8456V16.8762H23.4047V19.413H20.8679V25.2H23.5632C24.9109 25.2 26.1 24.0109 26.1 22.6632V12.4368Z" fill="white"/>
+                            </svg>                                
+                            Login with Facebook
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="18" fill="url(#paint0_linear)"/>
+                                <path d="M23.9227 10.8H12.9773C11.7415 10.8 10.8 11.7416 10.8 12.9774V23.9227C10.8 25.1585 11.7415 26.1 12.9773 26.1H23.9227C25.1585 26.1 26.1 25.1585 26.1 23.9227V12.9774C26.1 11.7416 25.1585 10.8 23.9227 10.8ZM18.45 23.04C20.9804 23.04 23.04 21.0393 23.04 18.6266C23.04 18.2147 22.9811 17.7439 22.8634 17.3908H24.1581V23.6285C24.1581 23.9227 23.9227 24.217 23.5696 24.217H13.3304C13.0361 24.217 12.7419 23.9816 12.7419 23.6285V17.332H14.0954C13.9777 17.7439 13.9188 18.1558 13.9188 18.5677C13.86 21.0393 15.9196 23.04 18.45 23.04ZM18.45 21.2747C16.8023 21.2747 15.5077 19.98 15.5077 18.3912C15.5077 16.8024 16.8023 15.5077 18.45 15.5077C20.0977 15.5077 21.3923 16.8024 21.3923 18.3912C21.3923 20.0389 20.0977 21.2747 18.45 21.2747ZM24.0992 14.9781C24.0992 15.3312 23.805 15.6254 23.4519 15.6254H21.8042C21.4511 15.6254 21.1569 15.3312 21.1569 14.9781V13.3893C21.1569 13.0362 21.4511 12.742 21.8042 12.742H23.4519C23.805 12.742 24.0992 13.0362 24.0992 13.3893V14.9781Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear" x1="7.65" y1="31.95" x2="31.5" y2="7.2" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EEA054"/>
+                                <stop offset="0.502762" stop-color="#D64763"/>
+                                <stop offset="1" stop-color="#B62A99"/>
+                                </linearGradient>
+                                </defs>
+                            </svg> 
+                            Login with Instagrams
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 18C0 8.05886 8.05887 0 18 0C27.9411 0 36 8.05886 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18Z" fill="#FFE812"/>
+                                <path d="M18 8.25C11.3725 8.25 6 12.4861 6 17.7115C6 21.0899 8.24608 24.0542 11.6248 25.7281C11.441 26.362 10.4436 29.8062 10.4039 30.0768C10.4039 30.0768 10.38 30.2801 10.5117 30.3577C10.6433 30.4352 10.7982 30.375 10.7982 30.375C11.1757 30.3222 15.1762 27.5122 15.8686 27.0242C16.5603 27.1222 17.2726 27.1731 18 27.1731C24.6275 27.1731 30 22.9371 30 17.7115C30 12.4861 24.6275 8.25 18 8.25Z" fill="#381F1F"/>
+                                <path d="M11.3653 21.0144C10.9835 21.0144 10.673 20.7178 10.673 20.3532V16.2403H9.59281C9.21815 16.2403 8.91342 15.9362 8.91342 15.5625C8.91342 15.1887 9.21827 14.8846 9.59281 14.8846H13.1379C13.5125 14.8846 13.8173 15.1887 13.8173 15.5625C13.8173 15.9362 13.5124 16.2403 13.1379 16.2403H12.0577V20.3532C12.0577 20.7178 11.7472 21.0144 11.3653 21.0144ZM17.436 21.0054C17.1473 21.0054 16.9264 20.8882 16.8598 20.6996L16.517 19.8022L14.406 19.802L14.0629 20.7001C13.9966 20.8883 13.7758 21.0054 13.4872 21.0054C13.3353 21.0055 13.1852 20.9729 13.0471 20.9098C12.8562 20.8218 12.6728 20.5797 12.883 19.9268L14.539 15.568C14.6557 15.2365 15.01 14.895 15.4609 14.8847C15.9131 14.8949 16.2675 15.2365 16.3843 15.5687L18.0396 19.9255C18.2503 20.58 18.0669 20.8222 17.876 20.91C17.7379 20.973 17.5878 21.0055 17.436 21.0054C17.436 21.0054 17.4358 21.0054 17.436 21.0054ZM16.153 18.5758L15.4615 16.6114L14.77 18.5758H16.153ZM19.1538 20.9134C18.7879 20.9134 18.4903 20.6287 18.4903 20.2788V15.5769C18.4903 15.1951 18.8074 14.8846 19.1971 14.8846C19.5867 14.8846 19.9038 15.1951 19.9038 15.5769V19.6442H21.375C21.7408 19.6442 22.0384 19.929 22.0384 20.2788C22.0384 20.6287 21.7408 20.9134 21.375 20.9134H19.1538ZM23 21.0054C22.6182 21.0054 22.3077 20.6949 22.3077 20.3131V15.5769C22.3077 15.1951 22.6182 14.8846 23 14.8846C23.3818 14.8846 23.6923 15.1951 23.6923 15.5769V17.0649L25.6239 15.1334C25.7232 15.034 25.8597 14.9793 26.0079 14.9793C26.1807 14.9793 26.3543 15.0539 26.4843 15.1838C26.6056 15.3049 26.6779 15.4608 26.6878 15.6227C26.6979 15.786 26.6435 15.9356 26.5351 16.0442L24.9574 17.6216L26.6615 19.8792C26.7166 19.9517 26.7566 20.0343 26.7795 20.1223C26.8023 20.2104 26.8074 20.3021 26.7945 20.3921C26.7821 20.4822 26.752 20.5689 26.7059 20.6473C26.6598 20.7257 26.5986 20.7941 26.5258 20.8487C26.4061 20.9397 26.2598 20.9888 26.1094 20.9884C26.0021 20.9889 25.8963 20.9643 25.8002 20.9165C25.7042 20.8687 25.6207 20.7991 25.5564 20.7132L23.9328 18.562L23.6926 18.8022V20.3127C23.6924 20.4963 23.6193 20.6724 23.4895 20.8022C23.3597 20.9321 23.1837 21.0051 23 21.0054Z" fill="#FFE812"/>
+                            </svg>
+                            Login with Kakaotalk 
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="18" fill="#55ACE3"/>
+                                <path d="M27.54 13.41C26.91 13.68 26.19 13.86 25.47 13.95C26.19 13.5 26.82 12.78 27.09 11.97C26.37 12.42 25.65 12.69 24.75 12.87C24.12 12.15 23.13 11.7 22.14 11.7C20.16 11.7 18.54 13.32 18.54 15.3C18.54 15.57 18.54 15.84 18.63 16.11C15.66 15.93 12.96 14.49 11.16 12.33C10.89 12.87 10.71 13.5 10.71 14.13C10.71 15.39 11.34 16.47 12.33 17.1C11.7 17.1 11.16 16.92 10.71 16.65C10.71 18.36 11.97 19.89 13.59 20.16C13.32 20.25 12.96 20.25 12.6 20.25C12.33 20.25 12.15 20.25 11.88 20.16C12.33 21.6 13.68 22.68 15.3 22.68C14.04 23.67 12.51 24.21 10.8 24.21C10.53 24.21 10.26 24.21 9.89999 24.12C11.52 25.11 13.41 25.74 15.48 25.74C22.14 25.74 25.74 20.25 25.74 15.48V15.03C26.46 14.76 27.09 14.13 27.54 13.41Z" fill="white"/>
+                            </svg>
+                            Login with Twitter    
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="18" cy="19" rx="18" ry="19" fill="#C5331E"/>
+                                <path d="M18.4075 17.0696V20.83H23.2525C22.54 22.8606 20.6875 24.2144 18.55 24.2144C15.7713 24.2144 13.5625 21.8829 13.5625 18.9498C13.5625 16.0167 15.7713 13.6852 18.55 13.6852C19.6188 13.6852 20.6163 14.0613 21.4713 14.6629L21.7563 14.8885L23.8938 11.9554L23.6088 11.7298C22.1125 10.6017 20.4025 10 18.55 10C13.8475 10 10 14.0613 10 19.025C10 23.9888 13.8475 28.05 18.55 28.05C23.2525 28.05 27.1 23.9888 27.1 19.025V17.1448H18.4075V17.0696Z" fill="white"/>
+                            </svg>
+                            Login with Google
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="mt-3 mb-3 text-center">
+                        <span>Bạn có tài khoản không?</span>
+                        <button class="btn c-blue p-0" type="button" data-toggle="modal" data-target="#signup-modal" data-dismiss="modal">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal signup -->
+    <div id="signup-modal" class="modal fade login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="float-right mt-3 mr-4">
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.41L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" fill="black" fill-opacity="1"/>
+                                </svg>
+                                    
+                                    
+                            </span>
+                        </button>
+                    </div>
+                    <h3 class="title mt-5 mb-3">Sign up to Poptop</h3>
+                    <small class="small-txt c-blue">Manages your account, check notifications, comment on videos and more</small>
+                    <div class="wrap-button mt-4 mb-4">
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5H28.5C30.15 4.5 31.5 5.85 31.5 7.5V28.5C31.5 30.15 30.15 31.5 28.5 31.5H7.5C5.835 31.5 4.5 30.15 4.5 28.5V7.5C4.5 5.85 5.835 4.5 7.5 4.5ZM28.5 28.5V7.5H7.5V28.5H28.5ZM18 18C15.525 18 13.5 15.975 13.5 13.5C13.5 11.025 15.525 9 18 9C20.475 9 22.5 11.025 22.5 13.5C22.5 15.975 20.475 18 18 18ZM16.5 13.5C16.5 12.675 17.175 12 18 12C18.825 12 19.5 12.675 19.5 13.5C19.5 14.325 18.825 15 18 15C17.175 15 16.5 14.325 16.5 13.5ZM9 27V24.705C9 20.955 14.955 19.335 18 19.335C21.045 19.335 27 20.955 27 24.705V27H9ZM23.535 24H12.465C13.485 23.16 16.035 22.32 18 22.32C19.965 22.32 22.5 23.16 23.535 24Z" fill="black"/>
+                            </svg>
+                            Use phone/ email/ username
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="18" fill="#4E6297"/>
+                                <path d="M26.1 12.4368C26.1 11.0891 24.9109 9.90002 23.5632 9.90002H13.3368C11.9891 9.90002 10.8 11.0891 10.8 12.4368V22.6632C10.8 24.0109 11.9891 25.2 13.3368 25.2H18.4896V19.413H16.587V16.8762H18.4896V15.8456C18.4896 14.1016 19.758 12.5954 21.3435 12.5954H23.4047V15.1321H21.3435C21.1057 15.1321 20.8679 15.37 20.8679 15.8456V16.8762H23.4047V19.413H20.8679V25.2H23.5632C24.9109 25.2 26.1 24.0109 26.1 22.6632V12.4368Z" fill="white"/>
+                            </svg>                                
+                            Continue with Facebook
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="18" fill="url(#paint0_linear)"/>
+                                <path d="M23.9227 10.8H12.9773C11.7415 10.8 10.8 11.7416 10.8 12.9774V23.9227C10.8 25.1585 11.7415 26.1 12.9773 26.1H23.9227C25.1585 26.1 26.1 25.1585 26.1 23.9227V12.9774C26.1 11.7416 25.1585 10.8 23.9227 10.8ZM18.45 23.04C20.9804 23.04 23.04 21.0393 23.04 18.6266C23.04 18.2147 22.9811 17.7439 22.8634 17.3908H24.1581V23.6285C24.1581 23.9227 23.9227 24.217 23.5696 24.217H13.3304C13.0361 24.217 12.7419 23.9816 12.7419 23.6285V17.332H14.0954C13.9777 17.7439 13.9188 18.1558 13.9188 18.5677C13.86 21.0393 15.9196 23.04 18.45 23.04ZM18.45 21.2747C16.8023 21.2747 15.5077 19.98 15.5077 18.3912C15.5077 16.8024 16.8023 15.5077 18.45 15.5077C20.0977 15.5077 21.3923 16.8024 21.3923 18.3912C21.3923 20.0389 20.0977 21.2747 18.45 21.2747ZM24.0992 14.9781C24.0992 15.3312 23.805 15.6254 23.4519 15.6254H21.8042C21.4511 15.6254 21.1569 15.3312 21.1569 14.9781V13.3893C21.1569 13.0362 21.4511 12.742 21.8042 12.742H23.4519C23.805 12.742 24.0992 13.0362 24.0992 13.3893V14.9781Z" fill="white"/>
+                                <defs>
+                                <linearGradient id="paint0_linear" x1="7.65" y1="31.95" x2="31.5" y2="7.2" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EEA054"/>
+                                <stop offset="0.502762" stop-color="#D64763"/>
+                                <stop offset="1" stop-color="#B62A99"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                                
+                            Continue with Instagrams
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 18C0 8.05886 8.05887 0 18 0C27.9411 0 36 8.05886 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18Z" fill="#FFE812"/>
+                                <path d="M18 8.25C11.3725 8.25 6 12.4861 6 17.7115C6 21.0899 8.24608 24.0542 11.6248 25.7281C11.441 26.362 10.4436 29.8062 10.4039 30.0768C10.4039 30.0768 10.38 30.2801 10.5117 30.3577C10.6433 30.4352 10.7982 30.375 10.7982 30.375C11.1757 30.3222 15.1762 27.5122 15.8686 27.0242C16.5603 27.1222 17.2726 27.1731 18 27.1731C24.6275 27.1731 30 22.9371 30 17.7115C30 12.4861 24.6275 8.25 18 8.25Z" fill="#381F1F"/>
+                                <path d="M11.3653 21.0144C10.9835 21.0144 10.673 20.7178 10.673 20.3532V16.2403H9.59281C9.21815 16.2403 8.91342 15.9362 8.91342 15.5625C8.91342 15.1887 9.21827 14.8846 9.59281 14.8846H13.1379C13.5125 14.8846 13.8173 15.1887 13.8173 15.5625C13.8173 15.9362 13.5124 16.2403 13.1379 16.2403H12.0577V20.3532C12.0577 20.7178 11.7472 21.0144 11.3653 21.0144ZM17.436 21.0054C17.1473 21.0054 16.9264 20.8882 16.8598 20.6996L16.517 19.8022L14.406 19.802L14.0629 20.7001C13.9966 20.8883 13.7758 21.0054 13.4872 21.0054C13.3353 21.0055 13.1852 20.9729 13.0471 20.9098C12.8562 20.8218 12.6728 20.5797 12.883 19.9268L14.539 15.568C14.6557 15.2365 15.01 14.895 15.4609 14.8847C15.9131 14.8949 16.2675 15.2365 16.3843 15.5687L18.0396 19.9255C18.2503 20.58 18.0669 20.8222 17.876 20.91C17.7379 20.973 17.5878 21.0055 17.436 21.0054C17.436 21.0054 17.4358 21.0054 17.436 21.0054ZM16.153 18.5758L15.4615 16.6114L14.77 18.5758H16.153ZM19.1538 20.9134C18.7879 20.9134 18.4903 20.6287 18.4903 20.2788V15.5769C18.4903 15.1951 18.8074 14.8846 19.1971 14.8846C19.5867 14.8846 19.9038 15.1951 19.9038 15.5769V19.6442H21.375C21.7408 19.6442 22.0384 19.929 22.0384 20.2788C22.0384 20.6287 21.7408 20.9134 21.375 20.9134H19.1538ZM23 21.0054C22.6182 21.0054 22.3077 20.6949 22.3077 20.3131V15.5769C22.3077 15.1951 22.6182 14.8846 23 14.8846C23.3818 14.8846 23.6923 15.1951 23.6923 15.5769V17.0649L25.6239 15.1334C25.7232 15.034 25.8597 14.9793 26.0079 14.9793C26.1807 14.9793 26.3543 15.0539 26.4843 15.1838C26.6056 15.3049 26.6779 15.4608 26.6878 15.6227C26.6979 15.786 26.6435 15.9356 26.5351 16.0442L24.9574 17.6216L26.6615 19.8792C26.7166 19.9517 26.7566 20.0343 26.7795 20.1223C26.8023 20.2104 26.8074 20.3021 26.7945 20.3921C26.7821 20.4822 26.752 20.5689 26.7059 20.6473C26.6598 20.7257 26.5986 20.7941 26.5258 20.8487C26.4061 20.9397 26.2598 20.9888 26.1094 20.9884C26.0021 20.9889 25.8963 20.9643 25.8002 20.9165C25.7042 20.8687 25.6207 20.7991 25.5564 20.7132L23.9328 18.562L23.6926 18.8022V20.3127C23.6924 20.4963 23.6193 20.6724 23.4895 20.8022C23.3597 20.9321 23.1837 21.0051 23 21.0054Z" fill="#FFE812"/>
+                            </svg>
+                            Continue with Kakaotalk 
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="18" cy="18" r="18" fill="#55ACE3"/>
+                                <path d="M27.54 13.41C26.91 13.68 26.19 13.86 25.47 13.95C26.19 13.5 26.82 12.78 27.09 11.97C26.37 12.42 25.65 12.69 24.75 12.87C24.12 12.15 23.13 11.7 22.14 11.7C20.16 11.7 18.54 13.32 18.54 15.3C18.54 15.57 18.54 15.84 18.63 16.11C15.66 15.93 12.96 14.49 11.16 12.33C10.89 12.87 10.71 13.5 10.71 14.13C10.71 15.39 11.34 16.47 12.33 17.1C11.7 17.1 11.16 16.92 10.71 16.65C10.71 18.36 11.97 19.89 13.59 20.16C13.32 20.25 12.96 20.25 12.6 20.25C12.33 20.25 12.15 20.25 11.88 20.16C12.33 21.6 13.68 22.68 15.3 22.68C14.04 23.67 12.51 24.21 10.8 24.21C10.53 24.21 10.26 24.21 9.89999 24.12C11.52 25.11 13.41 25.74 15.48 25.74C22.14 25.74 25.74 20.25 25.74 15.48V15.03C26.46 14.76 27.09 14.13 27.54 13.41Z" fill="white"/>
+                            </svg>
+                            Continue with Twitter    
+                        </button>
+                        <button class="btn btn-login">
+                            <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="18" cy="19" rx="18" ry="19" fill="#C5331E"/>
+                                <path d="M18.4075 17.0696V20.83H23.2525C22.54 22.8606 20.6875 24.2144 18.55 24.2144C15.7713 24.2144 13.5625 21.8829 13.5625 18.9498C13.5625 16.0167 15.7713 13.6852 18.55 13.6852C19.6188 13.6852 20.6163 14.0613 21.4713 14.6629L21.7563 14.8885L23.8938 11.9554L23.6088 11.7298C22.1125 10.6017 20.4025 10 18.55 10C13.8475 10 10 14.0613 10 19.025C10 23.9888 13.8475 28.05 18.55 28.05C23.2525 28.05 27.1 23.9888 27.1 19.025V17.1448H18.4075V17.0696Z" fill="white"/>
+                            </svg>
+                            Continue with Google
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="mt-3 mb-3 text-center">
+                        <span>Bạn đã có tài khoản?</span>
+                        <button class="btn c-blue p-0" type="button" data-toggle="modal" data-target="#login-modal" data-dismiss="modal">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal QR code -->
+    <div id="QR-modal" class="modal fade login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="float-right mt-3 mr-4">
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.41L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" fill="black" fill-opacity="1"/>
+                                </svg>
+                                    
+                                    
+                            </span>
+                        </button>
+                    </div>
+                    <h3 class="title mt-5 mb-3">Login with QR code</h3>
+                    <div class="text-center mt-5">
+                        <img width="200" src="./src/QR_code.png" alt="">
+                    </div>
+                    <ol class="order-list mt-5">
+                        <li>Mở ứng dụng TikTok trên thiết bị di động của bạn và nhấn vào Khám phá</li>
+                        <li>Nhấn 
+                            <span>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 4.75V1.75C0.25 0.925 0.925 0.25 1.75 0.25H4.75V1.75H1.75V4.75H0.25ZM0.25 9.25H1.75V12.25H4.75V13.75H1.75C0.925 13.75 0.25 13.075 0.25 12.25V9.25ZM12.25 12.25H9.25V13.75H12.25C13.075 13.75 13.75 13.075 13.75 12.25V9.25H12.25V12.25ZM9.25 0.25H12.25C13.075 0.25 13.75 0.925 13.75 1.75V4.75H12.25V1.75H9.25V0.25Z" fill="black" fill-opacity="0.54"/>
+                                </svg>                                    
+                            </span>
+                            và quét mã QR</li>
+                        <li> Xác nhận đăng nhập trên thiết bị di động của bạn </li>
+                    </ol>
+                    <div class="text-center c-blue mt-5 mb-5">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 19.695V23.295L12.93 22.605C18.06 20.135 21.5 15.155 21.5 10.205C21.5 4.96502 17.24 0.705017 12 0.705017C6.76 0.705017 2.5 4.96502 2.5 10.205C2.5 15.275 6.49 19.435 11.5 19.695ZM4.5 10.205C4.5 6.06502 7.86 2.70502 12 2.70502C16.14 2.70502 19.5 6.06502 19.5 10.205C19.5 13.925 17.14 17.705 13.5 20.005V17.705H12C7.86 17.705 4.5 14.345 4.5 10.205ZM13 14.205V16.205H11V14.205H13ZM12.7704 9.52669C11.9421 10.1616 11 10.8837 11 12.705H13C13 11.6096 13.711 10.9883 14.4408 10.3506C15.21 9.67834 16 8.98793 16 7.70502C16 5.49502 14.21 3.70502 12 3.70502C9.79 3.70502 8 5.49502 8 7.70502H10C10 6.60502 10.9 5.70502 12 5.70502C13.1 5.70502 14 6.60502 14 7.70502C14 8.58423 13.4202 9.02862 12.7704 9.52669Z" fill="black" fill-opacity="0.54"/>
+                        </svg>
+                        Check the instruction
+                    </div>
+                    <hr>
+                    <div class="mt-3 mb-3 text-center">
+                        <span>Bạn không có tài khoản?</span>
+                        <button class="btn c-blue p-0" type="button" data-toggle="modal" data-target="#signup-modal" data-dismiss="modal">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal login username email -->
+    <div id="username-modal" class="modal fade login-modal"  tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="display: block!important; border: 2px solid black;" >
+                <div class="modal-body">
+                    <div class="float-right mt-3 mr-4">
+                        <button class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.41L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" fill="black" fill-opacity="1"/>
+                                </svg>
+                                    
+                                    
+                            </span>
+                        </button>
+                    </div>
+                    <h3 class="title mt-4 mb-3">Login </h3>
+                    <div class="wrap-tab">
+                        <div class="row">
+                            <div class="col-6 p-0">
+                                <div class="tab active" id="tab-phone">
+                                    Phone number
+                                </div>
+                            </div>
+                            <div class="col-6 p-0">
+                                <div class="tab" id="tab-id">
+                                    Email or PoptopID
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12 tab-content d-block" id="phone_number">
+                                <div class="form-group">
+                                    <div class="wrap-append-input">
+                                        <span class="pre">
+                                            <select name="" id="">
+                                                <option value="vn">VN+84</option>
+                                            </select>
+                                        </span>
+                                        <input type="text" placeholder="Phone number">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="wrap-input-icon">
+                                        <input id="" class="input-edit" type="text" name="" placeholder="Password">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C2.73 7.61 7 4.5 12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12ZM20.82 12C19.17 8.63 15.79 6.5 12 6.5C8.21 6.5 4.83 8.63 3.18 12C4.83 15.37 8.21 17.5 12 17.5C15.79 17.5 19.17 15.37 20.82 12ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM7.5 12C7.5 9.52 9.52 7.5 12 7.5C14.48 7.5 16.5 9.52 16.5 12C16.5 14.48 14.48 16.5 12 16.5C9.52 16.5 7.5 14.48 7.5 12Z" fill="black" fill-opacity="0.54"/>
+                                        </svg>
+                                            
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="c-blue">Forgot password?</a>
+                                </div>
+                                <div class="form-group mt-3 text-center">
+                                    <button class="btn btn-blue">Login</button>
+                                </div>
+                            </div>
+                            <div class="col-12 tab-content" id="poptopid">
+                                <div class="form-group">
+                                    <div class="wrap-append-input">
+                                        <span class="pre">
+                                            <select name="" id="">
+                                                <option value="vn">VN+84</option>
+                                            </select>
+                                        </span>
+                                        <input type="text" placeholder="Phone number">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="wrap-input-icon">
+                                        <input id="" class="input-edit" type="text" name="" placeholder="Password">
+                                        <button class="btn btn-inside">send code</button>
+                                            
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="c-blue">Login with password?</a>
+                                </div>
+                                <div class="form-group mt-3 text-center">
+                                    <button class="btn btn-blue">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                  
+
+                    <hr>
+                    <div class="mt-3 mb-3 text-center">
+                        <span>Bạn không có tài khoản?</span>
+                        <button class="btn c-blue p-0" type="button" data-toggle="modal" data-target="#signup-modal" data-dismiss="modal">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="header-bottom"></section>
+    <!-- ----- ----- breadcrumb ----- ------->
+
+    <!-- ----- ----- body ----- ------->
+    <div class="container main-section">
+        <div class="gap-md"></div>
+        <div class="row">
+            <div class="col-12">
+                <div class="input-group search-input">
+                    <input class="form-control" id="input_search" type="text" name="search" placeholder="Tìm kiếm tài khoản" aria-label="Recipient's " aria-describedby="my-addon">
+                    <div class="input-group-append">
+                        <span class="clear-search">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 1.83334C5.93087 1.83334 1.83337 5.93084 1.83337 11C1.83337 16.0692 5.93087 20.1667 11 20.1667C16.0692 20.1667 20.1667 16.0692 20.1667 11C20.1667 5.93084 16.0692 1.83334 11 1.83334ZM13.3742 7.33334L11 9.70751L8.62587 7.33334L7.33337 8.62584L9.70754 11L7.33337 13.3742L8.62587 14.6667L11 12.2925L13.3742 14.6667L14.6667 13.3742L12.2925 11L14.6667 8.62584L13.3742 7.33334ZM3.66671 11C3.66671 15.0425 6.95754 18.3333 11 18.3333C15.0425 18.3333 18.3334 15.0425 18.3334 11C18.3334 6.95751 15.0425 3.66668 11 3.66668C6.95754 3.66668 3.66671 6.95751 3.66671 11Z" fill="black" fill-opacity="0.54"/>
+                            </svg>                                
+                        </span>
+
+                        <a href="search.html" class="input-group-text" id="my-addon" >
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.965 11.255H12.755L17.745 16.255L16.255 17.745L11.255 12.755V11.965L10.985 11.685C9.845 12.665 8.365 13.255 6.755 13.255C3.165 13.255 0.255005 10.345 0.255005 6.755C0.255005 3.165 3.165 0.255005 6.755 0.255005C10.345 0.255005 13.255 3.165 13.255 6.755C13.255 8.365 12.665 9.845 11.685 10.985L11.965 11.255ZM2.255 6.755C2.255 9.245 4.26501 11.255 6.755 11.255C9.245 11.255 11.255 9.245 11.255 6.755C11.255 4.26501 9.245 2.255 6.755 2.255C4.26501 2.255 2.255 4.26501 2.255 6.755Z" fill="black" fill-opacity="0.54"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="gap-sm"></div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="wrap-suggest">
+                    <div class="title">
+                        Suggest account
+                    </div>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM7.5 10.6275L12.4425 5.685L13.5 6.75L7.5 12.75L4.5 9.75L5.5575 8.6925L7.5 10.6275Z" fill="#3399FF"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM7.5 10.6275L12.4425 5.685L13.5 6.75L7.5 12.75L4.5 9.75L5.5575 8.6925L7.5 10.6275Z" fill="#3399FF"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="mb-0">
+                            <a href="#" class="text-center c-blue d-block">xem thêm</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gap-sm"></div>
+                <div class="wrap-suggest">
+                    <div class="title">
+                        Suggest account
+                    </div>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM7.5 10.6275L12.4425 5.685L13.5 6.75L7.5 12.75L4.5 9.75L5.5575 8.6925L7.5 10.6275Z" fill="#3399FF"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM7.5 10.6275L12.4425 5.685L13.5 6.75L7.5 12.75L4.5 9.75L5.5575 8.6925L7.5 10.6275Z" fill="#3399FF"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="wrap-account">
+                                <div class="d-flex flex-box">
+                                    <div class="mr-2">
+                                        <img src="./src/avt.png" alt="avatar" height="50" width="50">
+                                    </div>
+                                    <div>
+                                        <div class="name">
+                                            <b class="c-black">Mon Mon</b>
+                                                
+                                        </div>
+                                        <div class="text-muted">
+                                            @monmon123
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="mb-0">
+                            <a href="#" class="text-center c-blue d-block">xem thêm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-7 profile ml-3">
+                <div class="gap-sm"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="d-flex">
+                                <img src="./src/avt.png" class="avatar mr-3" alt="avatar">
+                                <div>
+                                    <h2 class="title">Mon Mon
+                                        <svg width="1em" height="1em" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9 15C5.6925 15 3 12.3075 3 9C3 5.6925 5.6925 3 9 3C12.3075 3 15 5.6925 15 9C15 12.3075 12.3075 15 9 15ZM7.5 10.6275L12.4425 5.685L13.5 6.75L7.5 12.75L4.5 9.75L5.5575 8.6925L7.5 10.6275Z" fill="#3399FF"></path>
+                                        </svg>
+                                    </h2>
+                                    <div class="c-gray">
+                                        LISA  
+                                    </div>
+                                    <div class="gap-xs"></div>
+                                    <button id="follow" class="btn btn-blue">Follow</button>
+                                    <div class="" id="followed">
+                                        <button class="btn btn-outline-blue">Message</button>
+                                        <button id="unfollow" class="btn d-inline-block mess">
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                            <g>
+                                                <path d="M234.071,471.132H60.391c-6.453,0-12.333-2.991-16.135-8.207c-3.803-5.218-4.85-11.736-2.874-17.883
+                                                    c19.732-61.346,79.908-104.191,146.336-104.191c30.909,0,60.591,9.308,85.838,26.916c9.043,6.307,21.485,4.09,27.795-4.953
+                                                    c6.306-9.043,4.089-21.486-4.954-27.794c-12.498-8.717-25.85-15.828-39.817-21.257c18.583-16.896,30.911-40.555,33.053-67.048
+                                                    c28.177-27.448,65.111-42.488,104.704-42.488c30.909,0,60.591,9.308,85.838,26.916c9.043,6.307,21.486,4.09,27.795-4.953
+                                                    c6.306-9.043,4.089-21.486-4.954-27.794c-12.498-8.717-25.85-15.828-39.817-21.257c20.499-18.638,33.386-45.506,33.386-75.328
+                                                    C496.586,45.673,450.913,0,394.774,0c-56.14,0-101.812,45.673-101.812,101.813c0,29.701,12.784,56.473,33.139,75.102
+                                                    c-2.785,1.072-5.55,2.212-8.295,3.42c-12.492,5.497-24.241,12.245-35.162,20.183c-15.068-37.415-51.746-63.893-94.49-63.893
+                                                    c-56.14,0-101.812,45.673-101.812,101.813c0,29.614,12.71,56.316,32.96,74.938c-54.148,20.292-98.053,63.87-115.927,119.444
+                                                    c-5.928,18.431-2.788,37.976,8.616,53.623c11.402,15.645,29.042,24.618,48.401,24.618h173.68
+                                                    c11.026,0,19.963-8.938,19.963-19.963S245.096,471.132,234.071,471.132z M394.775,39.926c34.124,0,61.886,27.762,61.886,61.886
+                                                    s-27.762,61.886-61.886,61.886c-34.124,0-61.886-27.762-61.886-61.886S360.651,39.926,394.775,39.926z M188.155,176.55
+                                                    c34.124,0,61.886,27.762,61.886,61.886s-27.762,61.886-61.886,61.886s-61.886-27.762-61.886-61.886
+                                                    S154.031,176.55,188.155,176.55z"/>
+                                                <path d="M503.217,326.082c-8.965-6.418-21.436-4.354-27.853,4.612l-98.4,137.447c-2.687,3.116-6.055,3.789-7.859,3.909
+                                                    c-1.857,0.127-5.463-0.114-8.555-3.057l-63.703-61.168c-7.954-7.638-20.593-7.379-28.226,0.573
+                                                    c-7.637,7.952-7.38,20.59,0.572,28.226l63.767,61.228c9.55,9.091,22.298,14.149,35.414,14.149c1.127,0,2.257-0.037,3.387-0.113
+                                                    c14.288-0.952,27.628-7.9,36.599-19.062c0.233-0.289,0.455-0.584,0.672-0.885l98.799-138.006
+                                                    C514.247,344.97,512.183,332.5,503.217,326.082z"/>
+                                            </g>
+
+                                        </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 c-black follow-amount">
+                                <b>0 </b>Đang Follow
+                                <b class="ml-2">10.9M </b>Follower
+                                <b class="ml-2">118.9M </b>Thích
+                            </div>
+                            <div class="mt-3">
+                          
+                                    Hi 🙋🏻‍♀️ <br>
+                                    Model/Creator <br>
+                                    Welcome to my world of Beauty✨ <br>
+                                    💌 rose@labs.management <br>
+                          
+                            </div>
+                        </div>
+                        <div class="gap-sm"></div>
+                        <div class="col-lg-12">
+                            <div class="wrap-tab">
+                                <div class="row">
+                                    <div class="col-6 p-0">
+                                        <div class="tab active" id="tab-video">
+                                            Video
+                                        </div>
+                                    </div>
+                                    <div class="col-6 p-0">
+                                        <div class="tab" id="tab-liked">
+                                            <svg width="1em" height="1em" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 3C17.9249 3 13 7.92487 13 14V21H8C6.89543 21 6 21.8954 6 23V41C6 42.1046 6.89543 43 8 43H40C41.1046 43 42 42.1046 42 41V23C42 21.8954 41.1046 21 40 21H35V14C35 7.92487 30.0751 3 24 3ZM31 21V14C31 10.134 27.866 7 24 7C20.134 7 17 10.134 17 14V21H31Z"></path></svg>
+                                            Liked
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-1">
+                                    <div class="col-12 tab-content d-block" id="tab_video">
+                                        <div class="row wrap-list-videos">
+                                            <div class="col-4 video">
+                                               <a class="d-block" href="#">
+                                                <img src="src/pic1.png" alt="">
+                                                <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
+                                               </a>
+                                            </div>
+                                            <div class="col-4 video">
+                                                <a class="d-block" href="#">
+                                                 <img src="src/pic1.png" alt="">
+                                                 <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
+
+                                                </a>
+                                             </div>
+                                             <div class="col-4 video">
+                                                <a class="d-block" href="#">
+                                                 <img src="src/pic1.png" alt="">
+                                                 <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
+
+                                                </a>
+                                             </div>
+                                             <div class="col-4 video">
+                                                <a class="d-block" href="#">
+                                                 <img src="src/pic1.png" alt="">
+                                                 <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
+
+                                                </a>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 tab-content" id="tab_liked">
+                                        <div class="gap-md"></div>
+                                        <div class="container text-center">
+                                            <svg class="jsx-3565499374" width="90" height="90" viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="fill-opacity: 0.34; margin-bottom: 24px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 8.5C20.9624 8.5 18.5 10.9624 18.5 14V18.5H29.5V14C29.5 10.9624 27.0376 8.5 24 8.5ZM32.5 18.5V14C32.5 9.30558 28.6944 5.5 24 5.5C19.3056 5.5 15.5 9.30558 15.5 14V18.5H11C9.61929 18.5 8.5 19.6193 8.5 21V40C8.5 41.3807 9.61929 42.5 11 42.5H37C38.3807 42.5 39.5 41.3807 39.5 40V21C39.5 19.6193 38.3807 18.5 37 18.5H32.5ZM11.5 21.5V39.5H36.5V21.5H11.5Z"></path></svg>
+ 
+                                            <h3>This user's liked videos are private</h3>
+                                            <p class="c-gray">Videos liked by monmon are currently hidden</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----- ----- footer ----- ------->
+    <section class="footer-2"></section>
+    <section class="footer-1"></section>
+    <section class="footer-absolute"></section>
+</body>
+</html>
+
+
+<!-- /*-----*-----*-- lib-javascript --*-----*-----*/ -->
+<script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<!-- /*-----*-----*-- my-script --*-----*-----*/ -->
+<script src="./component/header/script.js"></script>
+<script src="./component/account/script.js"></script>
+

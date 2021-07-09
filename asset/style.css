@@ -1,0 +1,157 @@
+/*-- color --*/
+h1, h2, h3, h4, h5, h6{
+	
+}
+
+.c-blue{
+    color: #3399FF;
+}
+.c-dark-blue{
+    color: #3366CC;
+}
+.c-purple{
+    color: #333399;
+}
+.c-white{
+    color: white;
+}
+.c-black{
+    color: black;
+}
+.c-gray{
+    color: #928787;
+}
+.c-light-gray{
+    color: #00000054;
+}
+.bg-blue{
+    background-color: #3399FF;
+}
+.bg-pink{
+    background-color: #FF0852;
+}
+.bg-purple{
+    background-color: #333399;
+}
+
+.f-md{
+    font-size: 22px;
+}
+.btn-outline-blue{
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #3399FF;
+    color: #3399FF;
+}
+.btn-outline-blue:hover{
+    background-color: #3399FF;
+    border: 1px solid #3399FF;
+    color: white;
+}
+.btn-outline{
+    background-color: white;
+    border: 1px solid black;
+    color: black;   
+    width: 140px;
+    border-radius: 10px;
+}
+
+.btn-outline.active{
+    background-color: #3399FF;
+    border: 1px solid #3399FF;
+    color: white;   
+    border-radius: 10px;
+}
+.btn-outline:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #3399FF;
+    color: #3399FF;   
+    border-radius: 10px;
+}
+
+/*-- important style --*/
+.gap-md, .gap-sm,
+.gap-lg, .gap-xs{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+.gap-sm{
+    height: 30px;
+}
+.gap-xs{
+    height: 10px;
+}
+.gap-lg{
+    height: 100px;
+}
+.mg-pd-none{
+    padding: 0;
+    margin:0;
+}
+.large-size{
+    font-size: 30px!important;
+}
+.medium-size{
+    font-size: 18px!important;
+}
+.small-size{
+    font-size: 14px!important;
+}
+.xsmall-size{
+    font-size: 12px!important;
+}
+.hidden{
+    overflow: hidden!important;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+.unset{
+    position: unset!important;
+}
+
+/* scrollbar */
+.scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 4px #3399ff56;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+	background-color: #3399ff56;
+}
+
+@media only screen and (max-width:991px){
+    .mg-pd-none-mb{
+        padding: 0;
+	    margin:0;
+    }
+    .xsmall-size{
+        font-size: 8px!important;
+    }
+    .small-size{
+        font-size: 12px!important;
+    }
+    .medium-size{
+        font-size: 14px!important;
+    }
+    .large-size{
+        font-size: 20px!important;
+    }
+    .footer-absolute .small-size{
+        font-size: 10px!important;
+    }
+}

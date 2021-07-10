@@ -25,4 +25,19 @@ $(document).ready(function () {
     $("#bio").on("keyup", function () {
         $("#bio-save").addClass("active");
     });
+
+
+    $(".button-set").each(function (index, element) {
+        $(element).on("click", function () {
+            $(".button-set").each(function (index, element) {
+                $(element).removeClass("active");
+            });
+            $("#btn-" + index).addClass("active");
+            $(".tab-setting").each(function (index, element) {
+                $(element).addClass("d-none");
+            });
+            $("#set-" + index).removeClass("d-none");
+        });
+        
+    });
 });

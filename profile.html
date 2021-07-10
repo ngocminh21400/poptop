@@ -33,11 +33,16 @@
                     <a href="/">
                         <img class="header-logo" src="./src/logo.png" alt="logo">
                     </a>
+                    <div class="d-inline-block d-lg-none float-right button-mb">
+                        <button class="btn btn-blue" type="button" data-toggle="modal" data-target="#login-modal">
+                            Đăng nhập
+                        </button>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <ul class="list-inline text-center mb-0">
                         <li class="list-inline-item nav-menu">
-                            <a href="#" class="active">
+                            <a href="/" class="active">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20 11.25L22.8625 14.1125L16.7625 20.2125L11.7625 15.2125L2.5 24.4875L4.2625 26.25L11.7625 18.75L16.7625 23.75L24.6375 15.8875L27.5 18.75V11.25H20Z" fill="black"/>
@@ -50,7 +55,7 @@
                            
                         </li>
                         <li class="list-inline-item nav-menu">
-                            <a href="#">
+                            <a href="./common.html">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M5.20825 7.29167C5.20825 9.59285 7.07373 11.4583 9.37492 11.4583C11.6761 11.4583 13.5416 9.59285 13.5416 7.29167C13.5416 4.99048 11.6761 3.125 9.37492 3.125C7.07373 3.125 5.20825 4.99048 5.20825 7.29167ZM15.6249 11.4583C15.6249 13.1842 17.024 14.5833 18.7499 14.5833C20.4758 14.5833 21.8749 13.1842 21.8749 11.4583C21.8749 9.73244 20.4758 8.33333 18.7499 8.33333C17.024 8.33333 15.6249 9.73244 15.6249 11.4583Z" fill="black"/>
@@ -65,7 +70,7 @@
                             
                         </li>
                         <li class="list-inline-item nav-menu">
-                            <a href="#">
+                            <a href="./livestream.html">
                                 <div>
                                     <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="30" height="30" fill="url(#pattern0)"/>
@@ -85,17 +90,17 @@
 
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-none d-lg-block">
                     <ul class="list-inline text-right mb-0 right-nav-header">
                         <li class="list-inline-item">
                             
-                            <button class="btn" type="button" data-toggle="modal" data-target="#login-modal">
+                            <a class="btn" href="upload.html">
                                 <span>Tải lên </span>
                                 <svg width="1em" height="1em" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M27.4125 11.7434C26.4492 7.81452 22.1567 4.86502 17 4.86502C12.9058 4.86502 9.35 6.73266 7.57917 9.46579C3.315 9.8302 0 12.7342 0 16.2531C0 20.0225 3.81083 23.0859 8.5 23.0859H26.9167C30.8267 23.0859 34 20.535 34 17.3919C34 14.3854 31.0958 11.9484 27.4125 11.7434ZM26.9167 20.8083H8.5C5.36917 20.8083 2.83333 18.7698 2.83333 16.2531C2.83333 13.9185 5.00083 11.9712 7.87667 11.732L9.3925 11.6067L10.1008 10.5249C11.4467 8.44086 14.0817 7.14263 17 7.14263C20.7117 7.14263 23.9133 9.2608 24.6358 12.1875L25.0608 13.8957L27.2283 14.021C29.4383 14.1349 31.1667 15.6267 31.1667 17.3919C31.1667 19.2709 29.2542 20.8083 26.9167 20.8083ZM14.9458 15.1143H11.3333L17 10.559L22.6667 15.1143H19.0542V18.5307H14.9458V15.1143Z" fill="#333333"/>
                                 </svg>
                                     
-                            </button>
+                            </a>
 
                         </li>
                         <li class="list-inline-item">
@@ -153,14 +158,14 @@
                             </svg>
                             Use phone/ email/ username
                         </button>
-                        <button class="btn btn-login">
+                        <a href="/my-profile.html" class="btn btn-login">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="18" cy="18" r="18" fill="#4E6297"/>
                                 <path d="M26.1 12.4368C26.1 11.0891 24.9109 9.90002 23.5632 9.90002H13.3368C11.9891 9.90002 10.8 11.0891 10.8 12.4368V22.6632C10.8 24.0109 11.9891 25.2 13.3368 25.2H18.4896V19.413H16.587V16.8762H18.4896V15.8456C18.4896 14.1016 19.758 12.5954 21.3435 12.5954H23.4047V15.1321H21.3435C21.1057 15.1321 20.8679 15.37 20.8679 15.8456V16.8762H23.4047V19.413H20.8679V25.2H23.5632C24.9109 25.2 26.1 24.0109 26.1 22.6632V12.4368Z" fill="white"/>
                             </svg>                                
                             Login with Facebook
-                        </button>
-                        <button class="btn btn-login">
+                        </a>
+                        <a href="/my-profile.html" class="btn btn-login">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="18" cy="18" r="18" fill="url(#paint0_linear)"/>
                                 <path d="M23.9227 10.8H12.9773C11.7415 10.8 10.8 11.7416 10.8 12.9774V23.9227C10.8 25.1585 11.7415 26.1 12.9773 26.1H23.9227C25.1585 26.1 26.1 25.1585 26.1 23.9227V12.9774C26.1 11.7416 25.1585 10.8 23.9227 10.8ZM18.45 23.04C20.9804 23.04 23.04 21.0393 23.04 18.6266C23.04 18.2147 22.9811 17.7439 22.8634 17.3908H24.1581V23.6285C24.1581 23.9227 23.9227 24.217 23.5696 24.217H13.3304C13.0361 24.217 12.7419 23.9816 12.7419 23.6285V17.332H14.0954C13.9777 17.7439 13.9188 18.1558 13.9188 18.5677C13.86 21.0393 15.9196 23.04 18.45 23.04ZM18.45 21.2747C16.8023 21.2747 15.5077 19.98 15.5077 18.3912C15.5077 16.8024 16.8023 15.5077 18.45 15.5077C20.0977 15.5077 21.3923 16.8024 21.3923 18.3912C21.3923 20.0389 20.0977 21.2747 18.45 21.2747ZM24.0992 14.9781C24.0992 15.3312 23.805 15.6254 23.4519 15.6254H21.8042C21.4511 15.6254 21.1569 15.3312 21.1569 14.9781V13.3893C21.1569 13.0362 21.4511 12.742 21.8042 12.742H23.4519C23.805 12.742 24.0992 13.0362 24.0992 13.3893V14.9781Z" fill="white"/>
@@ -173,29 +178,29 @@
                                 </defs>
                             </svg> 
                             Login with Instagrams
-                        </button>
-                        <button class="btn btn-login">
+                        </a>
+                        <a href="/my-profile.html" class="btn btn-login">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 18C0 8.05886 8.05887 0 18 0C27.9411 0 36 8.05886 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18Z" fill="#FFE812"/>
                                 <path d="M18 8.25C11.3725 8.25 6 12.4861 6 17.7115C6 21.0899 8.24608 24.0542 11.6248 25.7281C11.441 26.362 10.4436 29.8062 10.4039 30.0768C10.4039 30.0768 10.38 30.2801 10.5117 30.3577C10.6433 30.4352 10.7982 30.375 10.7982 30.375C11.1757 30.3222 15.1762 27.5122 15.8686 27.0242C16.5603 27.1222 17.2726 27.1731 18 27.1731C24.6275 27.1731 30 22.9371 30 17.7115C30 12.4861 24.6275 8.25 18 8.25Z" fill="#381F1F"/>
                                 <path d="M11.3653 21.0144C10.9835 21.0144 10.673 20.7178 10.673 20.3532V16.2403H9.59281C9.21815 16.2403 8.91342 15.9362 8.91342 15.5625C8.91342 15.1887 9.21827 14.8846 9.59281 14.8846H13.1379C13.5125 14.8846 13.8173 15.1887 13.8173 15.5625C13.8173 15.9362 13.5124 16.2403 13.1379 16.2403H12.0577V20.3532C12.0577 20.7178 11.7472 21.0144 11.3653 21.0144ZM17.436 21.0054C17.1473 21.0054 16.9264 20.8882 16.8598 20.6996L16.517 19.8022L14.406 19.802L14.0629 20.7001C13.9966 20.8883 13.7758 21.0054 13.4872 21.0054C13.3353 21.0055 13.1852 20.9729 13.0471 20.9098C12.8562 20.8218 12.6728 20.5797 12.883 19.9268L14.539 15.568C14.6557 15.2365 15.01 14.895 15.4609 14.8847C15.9131 14.8949 16.2675 15.2365 16.3843 15.5687L18.0396 19.9255C18.2503 20.58 18.0669 20.8222 17.876 20.91C17.7379 20.973 17.5878 21.0055 17.436 21.0054C17.436 21.0054 17.4358 21.0054 17.436 21.0054ZM16.153 18.5758L15.4615 16.6114L14.77 18.5758H16.153ZM19.1538 20.9134C18.7879 20.9134 18.4903 20.6287 18.4903 20.2788V15.5769C18.4903 15.1951 18.8074 14.8846 19.1971 14.8846C19.5867 14.8846 19.9038 15.1951 19.9038 15.5769V19.6442H21.375C21.7408 19.6442 22.0384 19.929 22.0384 20.2788C22.0384 20.6287 21.7408 20.9134 21.375 20.9134H19.1538ZM23 21.0054C22.6182 21.0054 22.3077 20.6949 22.3077 20.3131V15.5769C22.3077 15.1951 22.6182 14.8846 23 14.8846C23.3818 14.8846 23.6923 15.1951 23.6923 15.5769V17.0649L25.6239 15.1334C25.7232 15.034 25.8597 14.9793 26.0079 14.9793C26.1807 14.9793 26.3543 15.0539 26.4843 15.1838C26.6056 15.3049 26.6779 15.4608 26.6878 15.6227C26.6979 15.786 26.6435 15.9356 26.5351 16.0442L24.9574 17.6216L26.6615 19.8792C26.7166 19.9517 26.7566 20.0343 26.7795 20.1223C26.8023 20.2104 26.8074 20.3021 26.7945 20.3921C26.7821 20.4822 26.752 20.5689 26.7059 20.6473C26.6598 20.7257 26.5986 20.7941 26.5258 20.8487C26.4061 20.9397 26.2598 20.9888 26.1094 20.9884C26.0021 20.9889 25.8963 20.9643 25.8002 20.9165C25.7042 20.8687 25.6207 20.7991 25.5564 20.7132L23.9328 18.562L23.6926 18.8022V20.3127C23.6924 20.4963 23.6193 20.6724 23.4895 20.8022C23.3597 20.9321 23.1837 21.0051 23 21.0054Z" fill="#FFE812"/>
                             </svg>
                             Login with Kakaotalk 
-                        </button>
-                        <button class="btn btn-login">
+                        </a>
+                        <a href="/my-profile.html" class="btn btn-login">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="18" cy="18" r="18" fill="#55ACE3"/>
                                 <path d="M27.54 13.41C26.91 13.68 26.19 13.86 25.47 13.95C26.19 13.5 26.82 12.78 27.09 11.97C26.37 12.42 25.65 12.69 24.75 12.87C24.12 12.15 23.13 11.7 22.14 11.7C20.16 11.7 18.54 13.32 18.54 15.3C18.54 15.57 18.54 15.84 18.63 16.11C15.66 15.93 12.96 14.49 11.16 12.33C10.89 12.87 10.71 13.5 10.71 14.13C10.71 15.39 11.34 16.47 12.33 17.1C11.7 17.1 11.16 16.92 10.71 16.65C10.71 18.36 11.97 19.89 13.59 20.16C13.32 20.25 12.96 20.25 12.6 20.25C12.33 20.25 12.15 20.25 11.88 20.16C12.33 21.6 13.68 22.68 15.3 22.68C14.04 23.67 12.51 24.21 10.8 24.21C10.53 24.21 10.26 24.21 9.89999 24.12C11.52 25.11 13.41 25.74 15.48 25.74C22.14 25.74 25.74 20.25 25.74 15.48V15.03C26.46 14.76 27.09 14.13 27.54 13.41Z" fill="white"/>
                             </svg>
                             Login with Twitter    
-                        </button>
-                        <button class="btn btn-login">
+                        </a>
+                        <a href="/my-profile.html" class="btn btn-login">
                             <svg width="36" height="38" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <ellipse cx="18" cy="19" rx="18" ry="19" fill="#C5331E"/>
                                 <path d="M18.4075 17.0696V20.83H23.2525C22.54 22.8606 20.6875 24.2144 18.55 24.2144C15.7713 24.2144 13.5625 21.8829 13.5625 18.9498C13.5625 16.0167 15.7713 13.6852 18.55 13.6852C19.6188 13.6852 20.6163 14.0613 21.4713 14.6629L21.7563 14.8885L23.8938 11.9554L23.6088 11.7298C22.1125 10.6017 20.4025 10 18.55 10C13.8475 10 10 14.0613 10 19.025C10 23.9888 13.8475 28.05 18.55 28.05C23.2525 28.05 27.1 23.9888 27.1 19.025V17.1448H18.4075V17.0696Z" fill="white"/>
                             </svg>
                             Login with Google
-                        </button>
+                        </a>
                     </div>
                     <hr>
                     <div class="mt-3 mb-3 text-center">
@@ -437,7 +442,8 @@
 
     <!-- ----- ----- body ----- ------->
     <div class="container main-section">
-        <div class="gap-md"></div>
+        <div class="gap-md d-none d-lg-block"></div>
+        <div class="gap-sm d-block d-lg-none"></div>
         <div class="row">
             <div class="col-12">
                 <div class="input-group search-input">
@@ -458,11 +464,10 @@
                 </div>
                 
             </div>
-
         </div>
-        <div class="gap-sm"></div>
+        <div class="gap-sm d-none d-lg-block"></div>
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 d-none d-lg-block">
                 <div class="wrap-suggest">
                     <div class="title">
                         Suggest account
@@ -692,7 +697,7 @@
                 <div class="gap-sm"></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-12 col-lg-9">
                             <div class="d-flex">
                                 <img src="./src/avt.png" class="avatar mr-3" alt="avatar">
                                 <div>
@@ -771,27 +776,27 @@
                                 <div class="row mt-1">
                                     <div class="col-12 tab-content d-block" id="tab_video">
                                         <div class="row wrap-list-videos">
-                                            <div class="col-4 video">
+                                            <div class="col-6 col-lg-4 video">
                                                <a class="d-block" href="#">
                                                 <img src="src/pic1.png" alt="">
                                                 <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
                                                </a>
                                             </div>
-                                            <div class="col-4 video">
+                                            <div class="col-6 col-lg-4 video">
                                                 <a class="d-block" href="#">
                                                  <img src="src/pic1.png" alt="">
                                                  <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
 
                                                 </a>
                                              </div>
-                                             <div class="col-4 video">
+                                             <div class="col-6 col-lg-4 video">
                                                 <a class="d-block" href="#">
                                                  <img src="src/pic1.png" alt="">
                                                  <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>
 
                                                 </a>
                                              </div>
-                                             <div class="col-4 video">
+                                             <div class="col-6 col-lg-4 video">
                                                 <a class="d-block" href="#">
                                                  <img src="src/pic1.png" alt="">
                                                  <button class="btn"><i class="fa fa-caret-right" aria-hidden="true"></i> 114</button>

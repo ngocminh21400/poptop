@@ -86,7 +86,7 @@ video:focus {
     top: 260px;
     text-align: right;
     display: inline-block;
-    right: -220px;
+    right: -230px;
 }
 
 .live-section .comment-area{
@@ -135,4 +135,24 @@ video:focus {
     position: absolute;
     bottom: 8px;
     right: 10px;
+}
+.video-area .mask .btn{
+    padding: 0px 10px;
+}
+
+
+@media only screen and (max-width:991px){
+    .live-section .video-area {
+        width: 100%;
+    }
+    .live-section .mask .button {
+        right: -125px;
+    }
+    .live-section .comment-area{
+        display: none;
+    }
+    .recommend-section {
+        width: 100%;
+        margin: 0;
+    }
 }

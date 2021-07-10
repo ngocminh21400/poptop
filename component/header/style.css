@@ -235,10 +235,12 @@
     left: 0;
     z-index: 9999;
     width: 400px;
-    background-color: rgb(236, 237, 238);
+    background-color: white;
     border-radius: 14px;
     padding: 20px;
     text-align: left;
+    box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 20%);
+
 }
 .wrap-notify .header{
 
@@ -292,6 +294,7 @@
     box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 20%);
     -webkit-animation: toTop 0.4s;
     animation: toTop 0.4s;
+    z-index: 100;
 }
 .wrap-setting-popup .popup-item a{
     display: block;
@@ -301,4 +304,76 @@
 }
 .wrap-setting-popup .popup-item a:hover{
     background-color: rgba(128, 128, 128, 0.158);
+}
+.loadmore{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.loadmore svg{
+    height: 70px;
+}
+
+@media only screen and (max-width:991px){
+
+    .header-logo {
+        height: 36px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .button-mb{
+        margin-top: 10px;
+    }
+    .button-mb button{
+        background-color: #3399FF;
+        border-radius: 12px;
+        padding: 5px 16px;
+        color: white;
+        font-size: 13px;
+    }
+    .list-nav-mb{
+        margin-top: 10px;
+    }
+    .list-nav-mb .btn{
+        padding: 5px;
+    }
+    .list-nav-mb .btn svg{
+        height: 22px;
+        width: 22px;
+    }
+    .nav-menu {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    .nav-menu a {
+        display: block;
+        height: 46px;
+        width: 100%;
+        color: unset;
+    }
+    .nav-menu a svg{
+        height: 22px;
+        width: 22px;
+    }
+    .search-input {
+        width: 80%;
+        margin: auto;
+    }
+    .modal-dialog {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+    .login-modal .modal-content {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .wrap-notify {
+        left: 7px
+    }
+    .wrap-setting-popup {
+        right: 10px;
+    }
 }

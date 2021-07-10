@@ -1,0 +1,19 @@
+.avt-sm{
+    height: 24px;
+    width: 24px!important;
+    display: inline-block!important;
+    border-radius: 50%;
+}
+.slide-video img{
+    /* height: 100px; */
+}
+.slide-video{
+    display: block;
+}
+.account{
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-size: 14px;
+}

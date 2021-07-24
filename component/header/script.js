@@ -34,9 +34,9 @@ $(document).ready(function () {
     $(".open-notify").on("click", function () {
         $(".wrap-notify").toggle();
     });
-
     //popup setting
-    $("#btn-popup-setting").on("click", function () {
+    $(".btn-popup-setting").on("click", function () {
+        // console.log(1);
         $(".wrap-setting-popup").toggle();
     })
     // $("#btn-popup-setting").on("mouseenter", function () {
